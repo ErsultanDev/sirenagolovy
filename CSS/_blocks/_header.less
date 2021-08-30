@@ -1,0 +1,91 @@
+//main: ..//style.less
+
+.header {
+    padding: 10px 0;
+    background: url('.././images/dest/headerbg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .header_wrapper {
+        padding-top: 175px;
+        padding-left: 95px;
+        display: flex;
+        align-items: center;
+
+        .header_start {
+            width: 300px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .header_end {
+            h1 {
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 86px;
+                font-weight: 700;
+            }
+
+            .order {
+                max-width: 400px;
+                margin: 0 auto;
+
+
+                p {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and(max-width:1024px) {
+    .header {
+        .header_wrapper {
+            padding-left: 0;
+            padding-top: 90px;
+
+            .header_end {
+                h1 {
+                    font-size: 65px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:768px) {
+    .header {
+        .header_wrapper {
+            padding-top: 0;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+
+            .header_end {
+                .order {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:600px) {
+    .header {
+        .header_wrapper {
+            .header_start {
+                width: 200px;
+            }
+
+            .header_end {
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
